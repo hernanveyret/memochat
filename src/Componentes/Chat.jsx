@@ -52,7 +52,7 @@ const Chat = ({ chat, setChat, setStart }) => {
     const mensajesPrevios = chat[0]?.mensajes || [];
 
     sendMessage({
-      id: mensajesPrevios.length,
+      id: Date.now(),
       user: "papa",
       msj: valorInput,
       dia,
