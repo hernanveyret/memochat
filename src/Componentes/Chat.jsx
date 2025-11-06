@@ -116,13 +116,15 @@ const Chat = ({ chat, setChat, setStart }) => {
           </button>
         </form>
       </div>
-
-      <button
-        className='btn-cerrar-level'
-        onClick={() => setStart(false)}
-      >
-        X
-      </button>
+            { /*
+                  <button
+                    className='btn-cerrar-level'
+                    onClick={() => setStart(false)}
+                  >
+                    X
+                  </button>
+                  */
+            }
     </div>
   );
 };
