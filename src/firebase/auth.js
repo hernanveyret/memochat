@@ -19,7 +19,7 @@ const chatDocId = "chat_unico";
 export const sendMessage = async (message) => {
   console.log('Enviando un mensaje...');
   try {
-    const chatRef = doc(db, "chat", "XRwLVNAFrFWLnsT3kg4W");
+    const chatRef = doc(db, "chat", "misChats");
     // Agregamos el mensaje al array "mensajes"
     await updateDoc(chatRef, {
       mensajes: arrayUnion(message)
