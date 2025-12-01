@@ -17,7 +17,7 @@ const provider = new GoogleAuthProvider();
 const chatDocId = "chat_unico"; 
 
 export const sendMessage = async (message) => {
-  console.log('Enviando un mensaje...');
+  
   try {
     const chatRef = doc(db, "chat", "misChats");
     // Agregamos el mensaje al array "mensajes"
@@ -39,7 +39,7 @@ export const getData = (callback) => {
         id: doc.id,
         ...doc.data()
     }))
-    console.log('Usuarios', usuarios)
+    
     callback(usuarios);
   })
   return unsubscribe;
