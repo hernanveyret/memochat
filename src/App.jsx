@@ -19,14 +19,6 @@ const [ loading, setLoading ] = useState(true)
     return () => unsubscribe();
   }, []);
 
-  useEffect(() => {
-    if(loading){
-      console.log('Cargando mensajes...')
-    }else{
-      console.log(chat[0].mensajes)
-    }
-  },[chat])
-
   return (
     <div className="contenedor-app">
       <Home />
